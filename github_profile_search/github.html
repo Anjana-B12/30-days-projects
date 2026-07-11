@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github profile Search</title>
+    <link rel="stylesheet" href="github.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Github Profile Search</h1>
+            <img src="GitHub.svg" alt="Github Logo" id="logo">
+        </div>
+        <div class="main">
+            <input type="text" placeholder="Enter the Username" id="username" required autocomplete="off">
+            <button type="submit" id="Btn"><img src="search-icon.svg"></button>
+        </div>
+        <div class="result">
+            <img id="avatar" src="" alt="Github Avatar">
+            <div class="owner"></div>
+            <div class="followers"></div>
+            <div class="following"></div>
+            <div class="repos"></div>
+        </div>
+    </div>
+    <script src="github.js"></script>
+</body>
+</html>

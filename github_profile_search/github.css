@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    margin: 40px auto;
+    align-items: center;
+}
+
+.header h1 {
+    margin-right: 10px;
+}
+
+#logo {
+    height: 35px;
+    width: 35px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.main input {
+    font-size: 16px;
+    border-radius: 8px 0 0 8px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    outline: none;
+    background-color: #fff;
+}
+
+#Btn {
+    border: none;
+    background-color: rgb(96, 180, 96);
+    border-radius: 0 8px 8px 0;
+    padding: 6px;
+    cursor: pointer;
+}
+
+#Btn:hover {
+    background-color: rgb(75, 150, 75);
+}
+
+#Btn img {
+    height: 30px;
+    width: 35px;
+}
+
+/* Result Card */
+.result {
+    visibility: hidden;
+    margin-top: 40px;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: #f5e6d3;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* Avatar */
+#avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: none;
+    margin: 20px auto;
+    object-fit: cover;
+}
+
+/* User Information */
+.followers,
+.following,
+.owner,
+.repos {
+    background-color: #4f7c4b;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.followers:hover,
+.following:hover,
+.owner:hover,
+.repos:hover {
+    transform: translateY(-3px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 500px) {
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .main input {
+        width: 220px;
+    }
+
+    .result {
+        width: 90%;
+    }
+}
