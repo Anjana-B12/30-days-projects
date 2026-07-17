@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    margin-top: 10px;
+    background-color: rgb(241, 100, 124);
+    padding: 30px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.header {
+    padding: 10px;
+    font-size: 24px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.scrambled {
+    padding: 10px;
+}
+
+#scrambled-word {
+    color: blue;
+    padding: 20px 0;
+    font-size: 30px;
+    letter-spacing: 20px;
+}
+
+#hint {
+    font-size: 20px;
+}
+
+.form {
+    padding: 20px;
+}
+
+.form input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+#result {
+    padding-bottom: 20px;
+    color: greenyellow;
+}
+
+.footer {
+    padding: 20px;
+}
+
+#check, #refresh {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 30%;
+}

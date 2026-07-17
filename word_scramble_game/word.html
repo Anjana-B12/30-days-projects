@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Scramble Game</title>
+    <link rel="stylesheet" href="word.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Word Scramble Game</h1>
+        </div>
+        <div class="scrambled">
+            <h2 id="scrambled-word"></h2>
+            <p id="hint">Hint:</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Enter the correct word.." id="input">
+        </div>
+        <h3 id="result">Result:</h3>
+        <div class="footer">
+            <button id="check" onclick="check()">Check</button>
+            <button id="refresh" onclick="refresh()">Refresh</button>
+        </div>
+    </div>
+    <script src="word.js"></script>
+</body>
+</html>
