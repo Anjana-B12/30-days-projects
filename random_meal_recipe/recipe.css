@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Playwrite NZ Basic", cursive;
+}
+
+.container {
+    width: 95%;
+    max-width: 1100px;
+    margin: 10px auto;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+.header h1 {
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 20px;
+    font-size: 1.8rem;
+    padding: 10px;
+    text-align: center;
+    text-decoration: underline;
+    background-color: burlywood;
+}
+
+.content-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+.recipe-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.recipe-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.introduction p {
+    padding: 10px 5px;
+    font-size: 1.1rem;
+    margin-left: 0;
+    text-align: justify;
+}
+
+.content-2 {
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.ingrediants {
+    padding-left: 20px;
+}
+
+.instructions {
+    padding: 10px 0;
+}
+
+.instructions ol {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 15px auto;
+    background-color: burlywood;
+    border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+    .header h1 {
+        width: auto;
+        margin: 10px 50px;
+        font-size: 2.2rem;
+    }
+
+    .content-1 {
+        flex-direction: row;
+    }
+
+    .recipe-image {
+        min-width: 200px;
+        max-width: 400px;
+    }
+
+    .introduction p {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        margin-left: 20px;
+    }
+
+    .content-2 {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .ingrediants {
+        flex: 1;
+    }
+
+    .instructions {
+        flex: 2;
+    }
+}
