@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: #FEEAC9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentBox {
+    color: #fff;
+    font-size: 1.5rem;
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 10px;
+    background-color: #1581BF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.contentBox .jokeBtn {
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #FF8040;
+    cursor: pointer;
+}
+
+.jokePara {
+    cursor: pointer;
+    padding: 40px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.jokePara.show {
+    opacity: 1;
+}
