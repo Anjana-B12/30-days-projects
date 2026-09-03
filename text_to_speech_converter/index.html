@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text to Speech Converter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container p-4 text-center">
         <h1>Text to Speech Converter</h1>
-        <textarea id="text" placeholder="Type Something..."></textarea>
-        <button id="speakBtn">speak</button>
-        <button id="stopBtn">stop</button>
+        
+        <label for="text">Enter text to convert it into speech</label>
+        <textarea class="form-control mb-3 mt-3" placeholder="Enter the text..." id="text"></textarea>
+
+        <div class="d-flex gap-4">
+            <button class="btn btn-primary" id="speakBtn">Speak</button>
+            <button class="btn btn-danger" id="stopBtn">Stop</button>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
