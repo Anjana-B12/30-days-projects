@@ -13,7 +13,8 @@ h1 {
     margin-bottom: 20px;
 }
 
-textarea {
+textarea.form-control {
     min-height: 200px;
     resize: vertical;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
